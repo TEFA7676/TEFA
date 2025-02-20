@@ -1,0 +1,208 @@
+/* === الإعدادات الأساسية === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+}
+
+body {
+    background: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* === تأثير النجوم في الخلفية === */
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 40%, rgba(10, 10, 10, 1) 80%, black 100%);
+    z-index: -2;
+}
+
+.stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('stars.png') repeat;
+    animation: twinkle 50s infinite linear;
+    z-index: -1;
+}
+
+@keyframes twinkle {
+    from { background-position: 0 0; }
+    to { background-position: -10000px 5000px; }
+}
+
+/* === الهيدر (القائمة العلوية) === */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-bottom: 2px solid red;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+/* === تنسيق الأقسام === */
+section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+    opacity: 0.8;
+}
+
+/* === الأزرار === */
+button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: darkred;
+}
+
+/* === تصميم نموذج تسجيل الدخول والتسجيل === */
+.form-container {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border-bottom: 2px solid red;
+    text-align: center;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid red;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-container button {
+    width: 100%;
+}
+
+/* === تصميم لوحة التحكم (Dashboard) === */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding-top: 20px;
+    border-right: 2px solid red;
+}
+
+.sidebar h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background: red;
+}
+
+/* === تنسيق الصفحة الرئيسية للوحة التحكم === */
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-content h1 {
+    color: white;
+}
+
+.main-content button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.main-content button:hover {
+    background: darkred;
+}
+
+/* === زر تسجيل الخروج === */
+.logout {
+    color: red !important;
+}
+
+/* === تصميم الفوتر === */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-top: 2px solid red;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

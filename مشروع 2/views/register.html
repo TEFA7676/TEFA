@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب جديد</title>
+
+    <!-- ربط ملف CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- تأثير النجوم في الخلفية -->
+    <div class="background">
+        <div class="stars"></div>
+    </div>
+
+    <!-- نموذج إنشاء الحساب -->
+    <div class="register-container">
+        <h2>إنشاء حساب جديد</h2>
+        <form action="welcome.html" method="POST">
+            <input type="text" name="username" placeholder="اسم المستخدم" required>
+            <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+            <input type="password" name="password" placeholder="كلمة المرور" required>
+            <input type="password" name="confirm_password" placeholder="تأكيد كلمة المرور" required>
+            <button type="submit">إنشاء الحساب</button>
+        </form>
+
+        <p>أو يمكنك التسجيل عبر:</p>
+        <div class="social-register">
+            <button class="google-register">Google</button>
+            <button class="facebook-register">Facebook</button>
+        </div>
+
+        <p>لديك حساب بالفعل؟ <a href="login.html">تسجيل الدخول</a></p>
+    </div>
+
+</body>
+</html>

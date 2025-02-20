@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>تسجيل الدخول</h2>
+        <input type="email" id="loginEmail" placeholder="البريد الإلكتروني" required>
+        <input type="password" id="loginPassword" placeholder="كلمة المرور" required>
+        <button onclick="login()">تسجيل الدخول</button>
+        <p>ليس لديك حساب؟ <a href="#" onclick="toggleForm()">سجل الآن</a></p>
+    </div>
+
+    <div class="form-container" id="registerForm" style="display: none;">
+        <h2>إنشاء حساب</h2>
+        <input type="text" id="registerUsername" placeholder="اسم المستخدم" required>
+        <input type="email" id="registerEmail" placeholder="البريد الإلكتروني" required>
+        <input type="password" id="registerPassword" placeholder="كلمة المرور" required>
+        <button onclick="register()">إنشاء الحساب</button>
+        <p>لديك حساب بالفعل؟ <a href="#" onclick="toggleForm()">تسجيل الدخول</a></p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

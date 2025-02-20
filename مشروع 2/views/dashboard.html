@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم</title>
+
+    <!-- ربط ملف CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- تأثير النجوم في الخلفية -->
+    <div class="background">
+        <div class="stars"></div>
+    </div>
+
+    <!-- شريط التنقل الجانبي -->
+    <div class="sidebar">
+        <h2>لوحة التحكم</h2>
+        <ul>
+            <li><a href="#">🏠 الصفحة الرئيسية</a></li>
+            <li><a href="#">📊 تقارير الأداء</a></li>
+            <li><a href="#">⚙️ إعدادات الحساب</a></li>
+            <li><a href="logout.html" class="logout">🚪 تسجيل الخروج</a></li>
+        </ul>
+    </div>
+
+    <!-- المحتوى الرئيسي -->
+    <div class="main-content">
+        <h1>مرحبًا، <span id="username">المستخدم</span> 👋</h1>
+        <p>مرحبًا بك في لوحة التحكم الخاصة بك، يمكنك إدارة حسابك وخدماتك بسهولة.</p>
+        <button onclick="logout()">تسجيل الخروج</button>
+    </div>
+
+    <!-- كود جافا سكريبت لتسجيل الخروج -->
+    <script>
+        function logout() {
+            window.location.href = "login.html";
+        }
+    </script>
+
+</body>
+</html>
